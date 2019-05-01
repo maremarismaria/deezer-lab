@@ -1,0 +1,13 @@
+.Player {
+  align-self: center;
+  background-color: var(--base-bg-color-dark);
+  border-radius: 8px;
+  box-shadow: 4px 4px var(--base-accent);
+  padding: 20px;
+}
+
+.Player .deezer-widget-player {
+  background-color: var(--base-bg-color);
+  border-radius: 8px;
+  padding: 10px;
+}

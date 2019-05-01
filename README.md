@@ -1,3 +1,14 @@
+# deezer-lab :notes: :microscope:
+A simple React app for testing the [Deezer](https://deezer.com/) widget player.
+
+- (Temporary and ugly) steps for listen favourite tracks:
+  - Sign (up) in [Deezer for developers](https://developers.deezer.com/).
+  - Go to *API Explorer* > *User* tab. Copy `id` and `name`.
+  - Add to `REACT_APP_USER_ID` and `REACT_APP_USERNAME`.
+  - Run `npm start`.
+
+## React
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

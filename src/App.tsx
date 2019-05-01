@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {FC} from 'react';
+import {Player} from './components/Player';
+import {
+  DEEZER_URL,
+  DEEZER_URL_FAVORITES,
+  DEEZER_URL_OPTIONS,
+  DEEZER_URL_RADIO,
+  USER_ID,
+  USERNAME
+} from './constants';
 import './App.css';
 
-const App: React.FC = () => {
+const App: FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Player url={`${DEEZER_URL}${DEEZER_URL_OPTIONS}`.concat(
+          USER_ID && USERNAME
+            ? DEEZER_URL_FAVORITES
+            : DEEZER_URL_RADIO
+        )}
+      />
     </div>
   );
-}
+};
 
 export default App;
